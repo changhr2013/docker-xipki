@@ -1,0 +1,180 @@
+Sep 05, 2023 5:17:21 PM org.apache.karaf.main.Main launch
+INFO: Installing and starting initial bundles
+Sep 05, 2023 5:17:22 PM org.apache.karaf.main.Main launch
+INFO: All initial bundles installed and set to start
+Sep 05, 2023 5:17:22 PM org.apache.karaf.main.lock.SimpleFileLock lock
+INFO: Trying to lock /xipki-cli/lock
+Sep 05, 2023 5:17:22 PM org.apache.karaf.main.lock.SimpleFileLock lock
+INFO: Lock acquired
+Sep 05, 2023 5:17:22 PM org.apache.karaf.main.Main$KarafLockCallback lockAcquired
+INFO: Lock acquired. Setting startlevel to 100
+2023-09-05T17:17:27,110 | INFO  | FelixStartLevel  | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 | Adding features: aries-blueprint/[4.4.3,4.4.3],feature/[4.4.3,4.4.3],framework/[4.4.3,4.4.3],bundle/[4.4.3,4.4.3],shell/[4.4.3,4.4.3],log/[4.4.3,4.4.3],wrap/[2.6.12,2.6.12]
+2023-09-05T17:17:27,698 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 | Changes to perform:
+2023-09-05T17:17:27,698 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   Region: root
+2023-09-05T17:17:27,699 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |     Bundles to install:
+2023-09-05T17:17:27,700 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.api/1.0.1
+2023-09-05T17:17:27,700 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.cm/1.3.2
+2023-09-05T17:17:27,701 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.core/1.10.3
+2023-09-05T17:17:27,701 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.core.compatibility/1.0.0
+2023-09-05T17:17:27,702 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.apache.aries.proxy/org.apache.aries.proxy/1.1.13
+2023-09-05T17:17:27,702 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.apache.karaf.bundle/org.apache.karaf.bundle.blueprintstate/4.4.3
+2023-09-05T17:17:27,703 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.apache.karaf.bundle/org.apache.karaf.bundle.core/4.4.3
+2023-09-05T17:17:27,703 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.apache.karaf.features/org.apache.karaf.features.command/4.4.3
+2023-09-05T17:17:27,704 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.apache.karaf.log/org.apache.karaf.log.core/4.4.3
+2023-09-05T17:17:27,705 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.apache.karaf.shell/org.apache.karaf.shell.commands/4.4.3
+2023-09-05T17:17:27,705 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.apache.karaf.shell/org.apache.karaf.shell.core/4.4.3
+2023-09-05T17:17:27,706 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.jline/jline/3.21.0
+2023-09-05T17:17:27,706 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.ow2.asm/asm/9.4
+2023-09-05T17:17:27,707 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.ow2.asm/asm-commons/9.4
+2023-09-05T17:17:27,708 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.ow2.asm/asm-tree/9.4
+2023-09-05T17:17:27,708 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.ow2.asm/asm-analysis/9.4
+2023-09-05T17:17:27,709 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.ow2.asm/asm-util/9.4
+2023-09-05T17:17:27,709 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.ops4j.pax.url/pax-url-wrap/2.6.12/jar/uber
+2023-09-05T17:17:27,711 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 | Stopping bundles:
+2023-09-05T17:17:27,712 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.karaf.config.core/4.4.3
+2023-09-05T17:17:27,715 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 | Installing bundles:
+2023-09-05T17:17:27,715 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.api/1.0.1
+2023-09-05T17:17:27,759 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.cm/1.3.2
+2023-09-05T17:17:27,803 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.core/1.10.3
+2023-09-05T17:17:27,851 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.core.compatibility/1.0.0
+2023-09-05T17:17:27,892 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.apache.aries.proxy/org.apache.aries.proxy/1.1.13
+2023-09-05T17:17:27,942 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.apache.karaf.bundle/org.apache.karaf.bundle.blueprintstate/4.4.3
+2023-09-05T17:17:27,996 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.apache.karaf.bundle/org.apache.karaf.bundle.core/4.4.3
+2023-09-05T17:17:28,038 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.apache.karaf.features/org.apache.karaf.features.command/4.4.3
+2023-09-05T17:17:28,090 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.apache.karaf.log/org.apache.karaf.log.core/4.4.3
+2023-09-05T17:17:28,134 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.apache.karaf.shell/org.apache.karaf.shell.commands/4.4.3
+2023-09-05T17:17:28,181 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.apache.karaf.shell/org.apache.karaf.shell.core/4.4.3
+2023-09-05T17:17:28,236 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.jline/jline/3.21.0
+2023-09-05T17:17:28,337 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.ow2.asm/asm/9.4
+2023-09-05T17:17:28,387 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.ow2.asm/asm-commons/9.4
+2023-09-05T17:17:28,438 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.ow2.asm/asm-tree/9.4
+2023-09-05T17:17:28,481 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.ow2.asm/asm-analysis/9.4
+2023-09-05T17:17:28,521 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.ow2.asm/asm-util/9.4
+2023-09-05T17:17:28,561 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.ops4j.pax.url/pax-url-wrap/2.6.12/jar/uber
+2023-09-05T17:17:29,580 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 | Refreshing bundles:
+2023-09-05T17:17:29,581 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |     org.apache.karaf.config.core/4.4.3 (Should be wired to: org.apache.karaf.shell.core/4.4.3 (through [org.apache.karaf.config.core [11](R 11.0)] osgi.wiring.package; (&(osgi.wiring.package=org.apache.karaf.shell.api.action)(version>=4.4.0)(!(version>=5.0.0)))))
+2023-09-05T17:17:29,730 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 | Starting bundles:
+2023-09-05T17:17:29,732 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.ops4j.pax.url.wrap/2.6.12
+2023-09-05T17:17:29,749 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.karaf.config.core/4.4.3
+2023-09-05T17:17:29,763 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.objectweb.asm/9.4.0
+2023-09-05T17:17:29,768 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.objectweb.asm.tree/9.4.0
+2023-09-05T17:17:29,773 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.objectweb.asm.commons/9.4.0
+2023-09-05T17:17:29,779 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.aries.proxy/1.1.13
+2023-09-05T17:17:29,785 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.objectweb.asm.tree.analysis/9.4.0
+2023-09-05T17:17:29,791 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.aries.blueprint.api/1.0.1
+2023-09-05T17:17:29,796 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.aries.blueprint.core/1.10.3
+2023-09-05T17:17:29,802 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.aries.blueprint.cm/1.3.2
+2023-09-05T17:17:29,807 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.objectweb.asm.util/9.4.0
+2023-09-05T17:17:29,814 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.jline/3.21.0
+2023-09-05T17:17:29,820 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.karaf.shell.core/4.4.3
+2023-09-05T17:17:29,826 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.karaf.bundle.core/4.4.3
+2023-09-05T17:17:29,832 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.karaf.bundle.blueprintstate/4.4.3
+2023-09-05T17:17:29,837 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.karaf.log.core/4.4.3
+2023-09-05T17:17:29,843 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.karaf.features.command/4.4.3
+2023-09-05T17:17:29,848 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.karaf.shell.commands/4.4.3
+2023-09-05T17:17:29,856 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 | Done.
+2023-09-05T17:17:29,858 | INFO  | FelixStartLevel  | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 | Adding features: xipki-scep-client/[6.3.0,6.3.0],xipki-cmp-client/[6.3.0,6.3.0],xipki-ocsp-client/[6.3.0,6.3.0]
+2023-09-05T17:17:31,200 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 | Changes to perform:
+2023-09-05T17:17:31,201 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   Region: root
+2023-09-05T17:17:31,201 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |     Bundles to install:
+2023-09-05T17:17:31,202 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.bouncycastle/bcpkix-jdk18on/1.73
+2023-09-05T17:17:31,203 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.bouncycastle/bcprov-jdk18on/1.73
+2023-09-05T17:17:31,203 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.bouncycastle/bcutil-jdk18on/1.73
+2023-09-05T17:17:31,204 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:com.google.code.gson/gson/2.10.1
+2023-09-05T17:17:31,204 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.xipki.commons/password/6.3.0
+2023-09-05T17:17:31,205 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.xipki.commons/security/6.3.0
+2023-09-05T17:17:31,205 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.xipki.commons/security/6.3.0
+2023-09-05T17:17:31,205 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.xipki.commons/security/6.3.0
+2023-09-05T17:17:31,206 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.xipki.commons/security-shell/6.3.0
+2023-09-05T17:17:31,206 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.xipki.commons/shell-base/6.3.0
+2023-09-05T17:17:31,207 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.xipki.commons/util/6.3.0
+2023-09-05T17:17:31,207 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.xipki.gateway/cmp-client/6.3.0
+2023-09-05T17:17:31,208 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.xipki.gateway/scep-client/6.3.0
+2023-09-05T17:17:31,209 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.xipki/ipkcs11wrapper/1.0.5
+2023-09-05T17:17:31,210 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.xipki/ocsp-client/6.3.0
+2023-09-05T17:17:31,210 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.xipki.shell/cmp-client-shell/6.3.0
+2023-09-05T17:17:31,211 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.xipki.shell/ocsp-client-shell/6.3.0
+2023-09-05T17:17:31,212 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |       mvn:org.xipki.shell/scep-client-shell/6.3.0
+2023-09-05T17:17:31,213 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 | Installing bundles:
+2023-09-05T17:17:31,214 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.bouncycastle/bcpkix-jdk18on/1.73
+2023-09-05T17:17:31,276 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.bouncycastle/bcprov-jdk18on/1.73
+2023-09-05T17:17:31,396 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.bouncycastle/bcutil-jdk18on/1.73
+2023-09-05T17:17:31,449 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:com.google.code.gson/gson/2.10.1
+2023-09-05T17:17:31,499 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.xipki.commons/password/6.3.0
+2023-09-05T17:17:31,546 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.xipki.commons/security/6.3.0
+2023-09-05T17:17:31,590 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.xipki.commons/security/6.3.0
+2023-09-05T17:17:31,596 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.xipki.commons/security/6.3.0
+2023-09-05T17:17:31,603 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.xipki.commons/security-shell/6.3.0
+2023-09-05T17:17:31,660 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.xipki.commons/shell-base/6.3.0
+2023-09-05T17:17:31,702 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.xipki.commons/util/6.3.0
+2023-09-05T17:17:31,746 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.xipki.gateway/cmp-client/6.3.0
+2023-09-05T17:17:31,788 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.xipki.gateway/scep-client/6.3.0
+2023-09-05T17:17:31,832 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.xipki/ipkcs11wrapper/1.0.5
+2023-09-05T17:17:31,877 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.xipki/ocsp-client/6.3.0
+2023-09-05T17:17:31,919 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.xipki.shell/cmp-client-shell/6.3.0
+2023-09-05T17:17:31,973 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.xipki.shell/ocsp-client-shell/6.3.0
+2023-09-05T17:17:32,027 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   mvn:org.xipki.shell/scep-client-shell/6.3.0
+2023-09-05T17:17:32,166 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 | Starting bundles:
+2023-09-05T17:17:32,168 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.objectweb.asm/9.4.0
+2023-09-05T17:17:32,168 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.objectweb.asm.tree/9.4.0
+2023-09-05T17:17:32,169 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.objectweb.asm.commons/9.4.0
+2023-09-05T17:17:32,169 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.aries.proxy/1.1.13
+2023-09-05T17:17:32,170 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.objectweb.asm.tree.analysis/9.4.0
+2023-09-05T17:17:32,170 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.aries.blueprint.api/1.0.1
+2023-09-05T17:17:32,171 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.aries.blueprint.core/1.10.3
+2023-09-05T17:17:32,171 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.aries.blueprint.cm/1.3.2
+2023-09-05T17:17:32,172 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.objectweb.asm.util/9.4.0
+2023-09-05T17:17:32,173 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.jline/3.21.0
+2023-09-05T17:17:32,173 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.karaf.shell.core/4.4.3
+2023-09-05T17:17:32,174 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.karaf.bundle.core/4.4.3
+2023-09-05T17:17:32,174 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.karaf.bundle.blueprintstate/4.4.3
+2023-09-05T17:17:32,175 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.karaf.log.core/4.4.3
+2023-09-05T17:17:32,175 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.karaf.features.command/4.4.3
+2023-09-05T17:17:32,176 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.karaf.shell.commands/4.4.3
+2023-09-05T17:17:32,179 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   bcprov/1.73.0
+2023-09-05T17:17:32,184 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   bcutil/1.73.0
+2023-09-05T17:17:32,188 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   com.google.gson/2.10.1
+2023-09-05T17:17:32,192 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   bcpkix/1.73.0
+2023-09-05T17:17:32,197 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.xipki.ocsp-client/6.3.0
+2023-09-05T17:17:32,202 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.xipki.ipkcs11wrapper/1.0.5
+2023-09-05T17:17:32,207 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.xipki.gateway.cmp-client/6.3.0
+2023-09-05T17:17:32,211 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.xipki.commons.shell-base/6.3.0
+2023-09-05T17:17:32,215 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.xipki.shell.cmp-client-shell/6.3.0
+2023-09-05T17:17:32,220 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.xipki.shell.ocsp-client-shell/6.3.0
+2023-09-05T17:17:32,224 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.xipki.commons.security-shell/6.3.0
+2023-09-05T17:17:32,229 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.xipki.commons.util/6.3.0
+2023-09-05T17:17:32,233 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.xipki.gateway.scep-client/6.3.0
+2023-09-05T17:17:32,237 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.xipki.shell.scep-client-shell/6.3.0
+2023-09-05T17:17:32,241 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.xipki.commons.password/6.3.0
+2023-09-05T17:17:32,247 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.xipki.commons.security/6.3.0
+2023-09-05T17:17:32,252 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 |   org.apache.karaf.features.core/4.4.3
+2023-09-05T17:17:32,253 | INFO  | features-2-thread-1 | FeaturesServiceImpl              1117 | 17 - org.apache.karaf.features.core - 4.4.3 | Done.
+2023-09-05T17:17:32,317 | INFO  | FelixStartLevel  | BlueprintExtender                 181 | 21 - org.apache.aries.blueprint.core - 1.10.3 | No quiesce support is available, so blueprint components will not participate in quiesce operations
+2023-09-05T17:17:32,549 | INFO  | FelixStartLevel  | BlueprintContainerImpl            446 | 21 - org.apache.aries.blueprint.core - 1.10.3 | Blueprint bundle org.apache.aries.blueprint.cm/1.3.2 has been started
+2023-09-05T17:17:32,581 | INFO  | FelixStartLevel  | BlueprintContainerImpl            446 | 21 - org.apache.aries.blueprint.core - 1.10.3 | Blueprint bundle org.apache.aries.blueprint.core/1.10.3 has been started
+2023-09-05T17:17:32,759 | INFO  | FelixStartLevel  | CommandExtension                  146 | 29 - org.apache.karaf.shell.core - 4.4.3 | Registering commands for bundle org.apache.karaf.config.core/4.4.3
+2023-09-05T17:17:32,819 | INFO  | FelixStartLevel  | CommandExtension                  146 | 29 - org.apache.karaf.shell.core - 4.4.3 | Registering commands for bundle org.apache.karaf.bundle.core/4.4.3
+2023-09-05T17:17:32,850 | INFO  | FelixStartLevel  | CommandExtension                  146 | 29 - org.apache.karaf.shell.core - 4.4.3 | Registering commands for bundle org.apache.karaf.features.command/4.4.3
+2023-09-05T17:17:32,860 | INFO  | FelixStartLevel  | CommandExtension                  146 | 29 - org.apache.karaf.shell.core - 4.4.3 | Registering commands for bundle org.apache.karaf.log.core/4.4.3
+2023-09-05T17:17:32,879 | INFO  | FelixStartLevel  | CommandExtension                  146 | 29 - org.apache.karaf.shell.core - 4.4.3 | Registering commands for bundle org.apache.karaf.shell.commands/4.4.3
+2023-09-05T17:17:33,399 | INFO  | FelixStartLevel  | BlueprintContainerImpl            446 | 21 - org.apache.aries.blueprint.core - 1.10.3 | Blueprint bundle org.xipki.commons.password/6.3.0 has been started
+2023-09-05T17:17:33,457 | INFO  | FelixStartLevel  | Providers                          34 | 42 - org.xipki.commons.security - 6.3.0 | add BouncyCastleProvider
+2023-09-05T17:17:33,739 | INFO  | FelixStartLevel  | SignerFactoryRegisterImpl          58 | 42 - org.xipki.commons.security - 6.3.0 | unregistFactory invoked with null.
+2023-09-05T17:17:33,747 | INFO  | FelixStartLevel  | SecurityFactoryImpl                43 | 42 - org.xipki.commons.security - 6.3.0 | java.specification.version: 17\njava.class.path: /xipki-cli/lib/boot/org.apache.karaf.jaas.boot-4.4.3.jar:/xipki-cli/lib/boot/org.apache.karaf.main-4.4.3.jar:/xipki-cli/lib/boot/org.apache.karaf.specs.activator-4.4.3.jar:/xipki-cli/lib/boot/osgi.core-8.0.0.jar:/xipki-cli/lib/jdk9plus/istack-commons-runtime-3.0.10.jar:/xipki-cli/lib/jdk9plus/jakarta.xml.bind-api-2.3.3.jar:/xipki-cli/lib/jdk9plus/javax.annotation-api-1.3.2.jar:/xipki-cli/lib/jdk9plus/jaxb-runtime-2.3.3.jar:/xipki-cli/lib/jdk9plus/o
+2023-09-05T17:17:33,764 | INFO  | FelixStartLevel  | P11ModuleFactoryRegisterImpl       48 | 42 - org.xipki.commons.security - 6.3.0 | unregistFactory invoked with null.
+2023-09-05T17:17:33,790 | INFO  | FelixStartLevel  | SignerFactoryRegisterImpl          52 | 42 - org.xipki.commons.security - 6.3.0 | added SignerFactory binding for org.xipki.security.pkcs12.P12SignerFactory@5136972a
+2023-09-05T17:17:33,791 | INFO  | FelixStartLevel  | SignerFactoryRegisterImpl          52 | 42 - org.xipki.commons.security - 6.3.0 | added SignerFactory binding for org.xipki.security.pkcs11.P11SignerFactory@62163e86
+2023-09-05T17:17:33,796 | INFO  | FelixStartLevel  | P11ModuleFactoryRegisterImpl       42 | 42 - org.xipki.commons.security - 6.3.0 | added P11ModuleFactory binding for org.xipki.security.pkcs11.NativeP11ModuleFactory@45b4a725
+2023-09-05T17:17:33,798 | INFO  | FelixStartLevel  | P11ModuleFactoryRegisterImpl       42 | 42 - org.xipki.commons.security - 6.3.0 | added P11ModuleFactory binding for org.xipki.security.pkcs11.emulator.EmulatorP11ModuleFactory@1ba501e4
+2023-09-05T17:17:33,799 | INFO  | FelixStartLevel  | BlueprintContainerImpl            446 | 21 - org.apache.aries.blueprint.core - 1.10.3 | Blueprint bundle org.xipki.commons.security/6.3.0 has been started
+2023-09-05T17:17:34,022 | INFO  | FelixStartLevel  | CommandExtension                  146 | 29 - org.apache.karaf.shell.core - 4.4.3 | Registering commands for bundle org.xipki.commons.security-shell/6.3.0
+2023-09-05T17:17:34,082 | INFO  | FelixStartLevel  | BlueprintContainerImpl            446 | 21 - org.apache.aries.blueprint.core - 1.10.3 | Blueprint bundle org.xipki.commons.shell-base/6.3.0 has been started
+2023-09-05T17:17:34,101 | INFO  | FelixStartLevel  | CommandExtension                  146 | 29 - org.apache.karaf.shell.core - 4.4.3 | Registering commands for bundle org.xipki.commons.shell-base/6.3.0
+2023-09-05T17:17:34,176 | INFO  | FelixStartLevel  | CmpClientImpl                      94 | 46 - org.xipki.gateway.cmp-client - 6.3.0 | initializing ...
+2023-09-05T17:17:34,505 | INFO  | FelixStartLevel  | CmpClientImpl                     145 | 46 - org.xipki.gateway.cmp-client - 6.3.0 | initialized
+2023-09-05T17:17:34,506 | INFO  | FelixStartLevel  | BlueprintContainerImpl            446 | 21 - org.apache.aries.blueprint.core - 1.10.3 | Blueprint bundle org.xipki.gateway.cmp-client/6.3.0 has been started
+2023-09-05T17:17:34,573 | INFO  | FelixStartLevel  | BlueprintContainerImpl            446 | 21 - org.apache.aries.blueprint.core - 1.10.3 | Blueprint bundle org.xipki.ocsp-client/6.3.0 has been started
+2023-09-05T17:17:34,625 | INFO  | FelixStartLevel  | CommandExtension                  146 | 29 - org.apache.karaf.shell.core - 4.4.3 | Registering commands for bundle org.xipki.shell.cmp-client-shell/6.3.0
+2023-09-05T17:17:34,654 | INFO  | FelixStartLevel  | CommandExtension                  146 | 29 - org.apache.karaf.shell.core - 4.4.3 | Registering commands for bundle org.xipki.shell.ocsp-client-shell/6.3.0
+2023-09-05T17:17:34,691 | INFO  | FelixStartLevel  | CommandExtension                  146 | 29 - org.apache.karaf.shell.core - 4.4.3 | Registering commands for bundle org.xipki.shell.scep-client-shell/6.3.0
+2023-09-05T17:17:34,693 | INFO  | FelixDispatchQueue | Main                               94 | 3 - org.ops4j.pax.logging.pax-logging-api - 2.2.0 | Karaf started in 11s. Bundle stats: 51 active, 51 total

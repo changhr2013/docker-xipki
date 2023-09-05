@@ -1,0 +1,32 @@
+services:
+  xipki-mysql:
+    image: mysql:5.7
+    container_name: xipki-mysql
+    restart: on-failure
+    volumes:
+      - ./mysql/db:/var/lib/mysql
+      - ./mysql/conf/my.cnf:/etc/my.cnf
+      - ./mysql/init/:/docker-entrypoint-initdb.d/
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+      - TZ=Asia/Shanghai
+    ports:
+      - 9876:3306
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 10s
+  xipki-ca:
+    build: ./xipki-ca
+    container_name: xipki-ca
+    restart: always
+    ports: 
+      - 8443:8443
+    volumes:
+      - ./xipki-cli:/xipki-cli
+      - ./xipki-mgmt-cli:/xipki-mgmt-cli
+    depends_on:
+      xipki-mysql:
+        condition: service_healthy

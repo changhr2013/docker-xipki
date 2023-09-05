@@ -1,0 +1,39 @@
+- File system structure for CRL which is provided via out-of-band mechanism.
+    |
+    +-- UPDATEME (file, required for first time and on every change)
+    |     If present, it indicates that content of this folder is changed.
+    |     - If the CRL will be downloaded, this file will be created
+    |       automatically when the download has been finished;
+    |     - Otherwise this file must be created via other method.
+    |
+    +-- REMOVEME (file, optional)
+    |     Indicates that the CA shall be removed from the database.
+    |
+    +-- REVOCATION (file, optional)
+    |     If present, it specifies the revocation information of the CA.
+    |     An example file is in the folder template.
+    |     If there are multiple CRLs for the same CA certificate, only one of
+    |     the REVOCATION file of revoked CA certificate will be considered.
+    |
+    +-- ca.crt (file, required)
+    |     CA certificate. Either DER or PEM encoded.
+    |
+    +-- ca.crl (file, optional)
+    |     DER encoded CRL file.
+    |     - Will be ignored if the CA is revoked, otherwise required.
+    |
+    +-- issuer.crt (file, required for indirect CRL)
+    |     If present, it specifies the CRL's issuer certificate.
+    |
+    +-- crl.url (file, optional)
+    |     - If present, contains a line of the URL of the CRL.
+    |     - It will be used to construct the CrlID in the OCSP response.
+    |
+    +-- certs (directory, optional)
+        Contains all certificates that are valid at current time
+        (notBefore <= current <= notAfter).
+        Either the DER or PEM encoded raw certificate in a file with
+        suffix crt, der or pem, or the heximal serial numbers in the
+        file with suffix serials. Each crt-file contains exact one
+        certificate, and each serials-file contains multiple serial
+        numbers, one per line.
