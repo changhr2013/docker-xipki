@@ -1,2 +1,0 @@
-osgi.wiring.host; (&(osgi.wiring.host=org.apache.aries.blueprint.core)(bundle-version>=0.0.0))
-21

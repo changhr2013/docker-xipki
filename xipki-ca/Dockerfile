@@ -13,7 +13,8 @@ RUN mkdir -p xipki \
     && cp -rf /xipki-ca/lib/* ./lib/ \
     && cp -rf /xipki-ca/webapps/* ./webapps/ \
     && cp -rf /xipki-ca/xipki ./ \
-    && cp -f /xipki-ca/conf/server.xml ./conf/
+    && cp -f /xipki-ca/conf/server.xml ./conf/ \
+    && cp -f /xipki-ca/conf/catalina.properties ./conf/
 
 CMD ["catalina.sh", "run"]
 

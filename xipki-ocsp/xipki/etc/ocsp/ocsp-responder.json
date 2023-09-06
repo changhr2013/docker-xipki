@@ -1,13 +1,13 @@
 {
-//	"responseCache":{
-//		"datasource":{
-//			"name":"datasource-cache",
-//			"conf":{
-//				"file":"etc/ocsp/database/ocsp-cache-db.properties"
-//			}
-//		},
-//		"validity":"1d"
-//	},
+	"responseCache":{
+		"datasource":{
+			"name":"datasource-cache",
+			"conf":{
+				"file":"etc/ocsp/database/ocsp-cache-db.properties"
+			}
+		},
+		"validity":"1d"
+	},
 	"master":true,
 	"unknownIssuerBehaviour":"malformedRequest",
 	"datasources":[{

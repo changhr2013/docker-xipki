@@ -31,7 +31,7 @@
 		]
 	},
 	"sdkClient":{
-		"serverUrl":"https://localhost:8444/ca/ra/",
+		"serverUrl":"https://xipki-ca:8444/ca/ra/",
 		"ssl":{
 			"storeType":"pkcs12",
 			"keystorePassword":"1234",
@@ -43,7 +43,7 @@
 			}],
 			// valid values: 'default' for standard verification, 'no_op' for no-operation, or
 			// 'java:'<class implements javax.net.ssl.HostnameVerifier>
-			"hostnameVerifier":"default"
+			"hostnameVerifier":"no_op"
 		}
 	},
 	"audit":{

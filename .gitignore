@@ -1,3 +1,6 @@
 .vscode/
 mysql/db/*
+.idea/
 !.gitkeep
+xipki-mgmt-cli/data/
+xipki-mgmt-cli/output/

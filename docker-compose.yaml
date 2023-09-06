@@ -23,10 +23,32 @@ services:
     container_name: xipki-ca
     restart: always
     ports: 
-      - 8443:8443
+      - 8444:8444
+    volumes:
+      - ./xipki-mgmt-cli:/xipki-mgmt-cli
+    depends_on:
+      xipki-mysql:
+        condition: service_healthy
+  xipki-ocsp:
+    build: ./xipki-ocsp
+    container_name: xipki-ocsp
+    restart: always
+    ports:
+      - 8080:8080
+    volumes:
+      - ./xipki-mgmt-cli:/xipki-mgmt-cli
+    depends_on:
+      xipki-mysql:
+        condition: service_healthy
+  xipki-gateway:
+    build: ./xipki-gateway
+    container_name: xipki-gateway
+    restart: always
+    ports:
+      - 8082:8082
+      - 8445:8445
     volumes:
       - ./xipki-cli:/xipki-cli
-      - ./xipki-mgmt-cli:/xipki-mgmt-cli
     depends_on:
       xipki-mysql:
         condition: service_healthy
